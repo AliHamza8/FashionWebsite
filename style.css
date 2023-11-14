@@ -1,0 +1,518 @@
+@import url('https://fonts.googleapis.com/css2?family=GFS+Didot&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200&display=swap');
+
+:root {
+    --main-color: #E6C744;
+    --font-color: black;
+    --primary-color: white;
+    --grey-color: grey;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    max-width: 100%;
+}
+
+nav {
+    max-width: 95%;
+    margin: 0 auto;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hamburger {
+    display: block;
+}
+
+.mobile-navbar {
+    display: none;
+}
+
+.logo {
+    font-size: 1.3rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.logo span {
+    margin-left: 0.3rem;
+}
+
+.logo img {
+    width: 1.6rem; 
+    height: 1.6rem;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.nav-item {
+    list-style: none;
+    margin-left: 1rem;
+    padding: 0.3rem;
+}
+
+.nav-link {
+    position: relative;
+    width: 4rem;
+    text-decoration: none;
+    color: var(--font-color);
+    transition: all 0.4s ease-in-out;
+}
+
+.nav-link::before {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    background-color: var(--font-color);
+    width: 100%;
+    height: 3px;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    transform-origin: 0 0;
+    transform: scaleX(0);
+    z-index: -1;
+}
+
+.nav-link:hover::before {
+    opacity: 1;
+    transform: scaleX(1);
+}
+
+.btn {
+    padding: 0.7rem 1rem;
+    border: 1px solid var(--font-color);
+    background-color: var(--font-color);
+    color: var(--primary-color);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: transparent;
+    color: var(--font-color);
+}
+
+.btn-shop{
+    margin-top: 1rem;
+}
+
+.hero-section {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 3rem 0 0 0;
+}
+
+.container {
+    max-width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.hero-text-side {
+    width: 90%;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.hero-heading {
+    font-size: 3rem;
+}
+
+.hero-heading span {
+    padding: 0.3rem 1rem;
+    background-color: var(--main-color);
+}
+
+.hero-image {
+    max-width: 100%;
+}
+
+.brands {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 1.5rem 2rem;
+    background-color: var(--main-color);
+}
+
+.brand-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.brand {
+    max-width: 7rem;
+}
+
+.new-arrivals {
+    max-width: 100%;
+    margin: 5rem auto;
+}
+
+.new-arrivals-container {
+    padding-top: 2rem;
+    margin: 2rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 90%;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.new-arrivals h1 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.arrival-card {
+    margin: 0 auto;
+}
+
+.arrival-image {
+    max-width: 20rem;
+}
+
+.arrival-image-description {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.explore-link {
+    text-decoration: none;
+    color: #7F7F7F;
+}
+
+.arrow {
+    width: 1rem;
+}
+
+/* Banner */
+.banner{
+    position: relative;
+    margin: 6rem auto;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-image: linear-gradient(to left, #E0C340, #F9DF56);
+}
+
+.bn-image {
+    max-width: 30rem;
+}
+
+.banner-details {
+    margin: 2rem auto;
+    padding: 2rem;
+}
+
+.banner-details h1 {
+    font-size: 3.5rem;
+    font-weight: bold
+}
+
+.date {
+    font-weight: bold;
+}
+
+/* Young's Fashion */
+.young-fav {
+    margin: 15rem 0 8rem 0;
+    max-width: 100%;
+}
+
+.young-container {
+    position: relative;
+    padding-top: 3rem;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    width: 90%;
+}
+
+.young-fav h1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+} 
+
+.young-image {
+    max-width: 100%;
+
+}
+
+/* Mobile app section */
+.app-section{
+    max-width: 100%;
+    margin: 5rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.app-details {
+    padding: 2rem;
+}
+
+
+.app-details h1 {
+    font-weight: bold;
+    margin: 1rem 0;
+}
+
+.app-details p {
+    margin-bottom: 1rem;
+}
+
+.app-container {
+    position: relative;
+    padding: 2rem;  
+}
+
+.app-image {
+    max-width: 15rem;
+}
+
+/* Newsletter */
+.newsletter {
+    padding: 5rem 3rem;
+    background-color: var(--main-color);
+    max-width: 100%;
+    text-align: center;
+    color: var(--primary-color);
+}
+
+.newsletter h1 {
+    font-weight: bold;
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+.newsletter p {
+    margin-bottom: 1rem;
+}
+
+.text-and-btn {
+    position: relative;
+    max-width: 20rem;
+    margin: 0 auto;
+}
+
+.input-newsletter {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    border: 0;
+    outline: 0;
+}
+
+.btn-newsletter {
+    position: absolute;
+    right: 0.5rem;
+    top: 0.3rem;
+}
+
+/* Footer */
+footer {
+    max-width: 100%;
+    padding: 5rem 0;
+    background-color: var(--font-color);
+}
+
+.wrapper {
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 1rem;
+    color: var(--grey-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2rem;
+}
+
+.social-media h1 {
+    margin: 1rem 0;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.social-media p {
+    color: var(--grey-color);
+}
+
+.social-icons {
+    margin: 1rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.icon-pad {
+    position: relative;
+    padding: 0.7rem;
+    background-color: var(--main-color);
+    border-radius: 0.5rem;
+    text-align: center;
+}
+
+s-icon {
+    position: absolute;
+    top: 0.5rem;
+    background-color: var(--main-color);
+}
+
+.other-links {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 1rem 0 4rem;
+    gap: 1rem;
+}
+
+.other-links p {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.other-links a {
+    margin: 1rem 0;
+    text-decoration: none;
+    color: var(--grey-color);
+    display: block;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .navbar {
+        display: none;
+    }
+
+    .btn-login {
+        display: none;
+    }
+
+    .hamburger {
+        position: fixed;
+        padding: 0.5rem;
+        background-color: var(--font-color);
+        border-radius: 0.5rem;
+        top: 1rem;
+        right: 1.5rem;
+        z-index: 1;
+    }
+
+    .bar {
+        background-color: var(--main-color);
+        width: 2rem;
+        height: 3px;
+        margin: 5px 0;
+    }
+
+    .mobile-btn-login {
+        margin: 1rem 1rem;
+        font-size: 1rem;
+    }
+
+    .mobile-navbar {
+        position: fixed;
+        top: 5rem;
+        right: 0;
+        display: block;
+        padding: 2rem;
+        background-color: var(--main-color);
+        border-bottom-left-radius: 1rem;
+        border-top-left-radius: 1rem;
+        z-index: 1;
+    }
+
+    .hidden {
+        opacity: 0;
+    }
+
+    .container {
+        display: block;
+    }
+
+    .hero-image {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .brand-container {
+        flex-wrap: wrap;
+        
+    }
+
+    .new-arrivals h1{
+        text-align: center;
+    }
+
+    .banner {
+        display: block;
+    }
+
+    .bn-image {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .banner-details {
+        width: 60%;
+    }
+
+    .young-fav {
+        margin: 2rem;
+    }
+
+    .young-fav h1 {
+        text-align: center;
+    }
+
+    .young-container{
+        display: block;
+    }
+
+    .app-details {
+        width: 100%;
+        text-align: center;
+    }
+
+    .wrapper{
+        display: block;
+    }
+
+    .other-links {
+        margin: 2rem auto;
+    }
+}
+
+
+
+
